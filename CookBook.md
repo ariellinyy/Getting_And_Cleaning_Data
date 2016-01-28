@@ -20,7 +20,7 @@ _
 ..*features:
 
 | Signals            | Estimated      | Obtained by        |
-| 		     | from signals   | averaging siginals |
+| 		               | from signals   | averaging siginals |
 |--------------------|:--------------:| ------------------:|
 | `tBodyAcc-XYZ`     | `mean()`       | `gravityMean`      |		
 | `tGravityAcc-XYZ`  | `std()`        | `tBodyAccMean`     |
