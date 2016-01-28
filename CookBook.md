@@ -17,7 +17,7 @@ _
 _
 ..._LAYING_
 
-..*features:
+...*features:
 
 | Signals            | Estimated      | Obtained by        |
 | 		               | from signals   | averaging siginals |
