@@ -3,15 +3,15 @@ _This is a code book that describes the variables, the data, and any transformat
 
 ###Variables
 #####subject:
-unique number 1 to 30
+**`unique number 1 to 30`
 
 #####activity_labels:
-                  * WALKING
-                  * WALKING_UPSTAIRS
-                  * WALKING_DOWNSTAIRS
-                  * SITTING
-                  * STANDING
-                  * LAYING
+**`WALKING`
+**`WALKING_UPSTAIRS`
+**`WALKING_DOWNSTAIRS`
+**`SITTING`
+**`STANDING`
+**`LAYING`
 
 #####features:
 
@@ -34,7 +34,6 @@ Signals | Estimated from signals | Obtained by averaging siginals
 `fBodyAccJerkMag`  | `kurtosis()`   |                    	
 `fBodyGyroMag`     | `bandsEnergy()`|                    
 `fBodyGyroJerkMag` | `angle()`      |                    	
-
 
 
 * Prefix 't' to denote time; captured at a constant rate of 50 Hz
