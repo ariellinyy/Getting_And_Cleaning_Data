@@ -2,53 +2,48 @@
 _This is a code book that describes the variables, the data, and any transformations or work that were performed to clean up the data_
 
 ###Variables
-..*subject:
+#####subject:
 unique number 1 to 30
 
-..*activity_labels:
-..._WALKING_ 
-..._WALKING_UPSTAIRS
-_ 
-..._WALKING_DOWNSTAIRS
-_
-..._SITTING
-_
-..._STANDING
-_
-..._LAYING_
+#####activity_labels:
+                  * WALKING
+                  * WALKING_UPSTAIRS
+                  * WALKING_DOWNSTAIRS
+                  * SITTING
+                  * STANDING
+                  * LAYING
 
-...*features:
+#####features:
 
-| Signals            | Estimated      | Obtained by        |
-| 		               | from signals   | averaging siginals |
-|--------------------|:--------------:| ------------------:|
-| `tBodyAcc-XYZ`     | `mean()`       | `gravityMean`      |		
-| `tGravityAcc-XYZ`  | `std()`        | `tBodyAccMean`     |
-| `tBodyAccJerk-XYZ` | `mad()`        | `tBodyAccJerkMean` |
-| `tBodyGyro-XYZ`    | `max()`        | `tBodyGyroMean`    |	
-| `tBodyGyroJerk-XYZ`| `min()`        | `tBodyGyroJerkMean`| 
-| `tBodyAccMag`      | `sma()`	      |                    |
-| `tGravityAccMag`   | `energy()`     |                    |
-| `tBodyAccJerkMag`  | `iqr()`	      |                    |	
-| `tBodyGyroMag`     | `entropy()`    |                    |
-| `tBodyGyroJerkMag` | `arCoeff()`    |                    |
-| `fBodyAcc-XYZ`     | `correlation()`|                    |
-| `fBodyAccJerk-XYZ` | `maxInds()`    |                    |
-| `fBodyGyro-XYZ`    | `meanFreq()`   |                    |
-| `fBodyAccMag`      | `skewness()`   |                    |
-| `fBodyAccJerkMag`  | `kurtosis()`   |                    |	
-| `fBodyGyroMag`     | `bandsEnergy()`|                    |
-| `fBodyGyroJerkMag` | `angle()`      |                    |	
+Signals | Estimated from signals | Obtained by averaging siginals
+--------------------|--------------| ------------------
+`tBodyAcc-XYZ`     | `mean()`       | `gravityMean`	
+`tGravityAcc-XYZ`  | `std()`        | `tBodyAccMean`
+`tBodyAccJerk-XYZ` | `mad()`        | `tBodyAccJerkMean`
+`tBodyGyro-XYZ`    | `max()`        | `tBodyGyroMean`	
+`tBodyGyroJerk-XYZ`| `min()`        | `tBodyGyroJerkMean` 
+`tBodyAccMag`      | `sma()`	      |                    
+`tGravityAccMag`   | `energy()`     |                    
+`tBodyAccJerkMag`  | `iqr()`	      |                    	
+`tBodyGyroMag`     | `entropy()`    |                    
+`tBodyGyroJerkMag` | `arCoeff()`    |                    
+`fBodyAcc-XYZ`     | `correlation()`|                    
+`fBodyAccJerk-XYZ` | `maxInds()`    |                    
+`fBodyGyro-XYZ`    | `meanFreq()`   |                    
+`fBodyAccMag`      | `skewness()`   |                   
+`fBodyAccJerkMag`  | `kurtosis()`   |                    	
+`fBodyGyroMag`     | `bandsEnergy()`|                    
+`fBodyGyroJerkMag` | `angle()`      |                    	
 
 
 
-..1.Prefix 't' to denote time; captured at a constant rate of 50 Hz
-..2.Body and graviy acceleration siginals:tBodyAcc-XYZ and tGravityAcc-XYZ
-..3.Jerk signals:tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ
-..4.Euclidean norm:tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag
-..5.FFT:Fast Fourier Transform
-..6.Prefix 't' to indicate frequency domain signals
-..7.'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+* Prefix 't' to denote time; captured at a constant rate of 50 Hz
+* Body and graviy acceleration siginals:tBodyAcc-XYZ and tGravityAcc-XYZ
+* Jerk signals:tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ
+* Euclidean norm:tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag
+* FFT:Fast Fourier Transform
+* Prefix 't' to indicate frequency domain signals
+* '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 ###Data
 **README.txt**
