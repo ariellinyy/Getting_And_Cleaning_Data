@@ -1,7 +1,7 @@
 ##Merges the training and the test sets to create one data set.
 library(dplyr)
 
-setwd('/Users/Laputaalin/R_Homework/Project3/UCI HAR Dataset')
+##set my work directory setwd('/Users/Laputaalin/R_Homework/Project3/UCI HAR Dataset')
 
 ##read data from each file
 test_subject <- read.table("test/subject_test.txt", header = FALSE)
@@ -56,9 +56,3 @@ library(plyr)
 Data5 <- aggregate(. ~subject + activity, mean_std_data, mean)
 Data5 <- Data5[order(Data5$subject, Data5$activity),]
 write.table(Data5, file="tidydata.txt", row.names = FALSE)
-
-
-## To clean up the data CodeBook.md
-library(knitr)
-knit2html("CodeBook.md")
-
